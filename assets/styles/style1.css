@@ -68,7 +68,7 @@ article{
     padding-bottom: 20px;
     margin-top: 5px;
 }
-h3{
+article>h3{
     font-size: 140%;
     font-weight: bold;
     margin-left: 10%;

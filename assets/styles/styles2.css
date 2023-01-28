@@ -5,8 +5,10 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Comic Neue', cursive;
+    font-style: italic;
 }
 
+/*Banner*/
 .container {
     background: url(../img/design1_image2.jpg);
     background-size: cover;
@@ -32,11 +34,13 @@
     position: relative;
 }
 
+/*botones de navegacion*/
 nav {
     position: absolute;
     right: 50px;
     top: 70px;
 }
+
 nav a {
     display: inline;
     padding: 5px 20px;
@@ -48,15 +52,64 @@ nav a {
     box-shadow: 5px 3px 3px rgb(53, 52, 52);
     text-decoration: solid;
 }
-.nav-home::before{
+
+.nav-home::before {
     content: "Home";
 }
-.nav-about::before{
+
+.nav-about::before {
     content: "About";
 }
-.nav-contact::before{
-    content:"Contact"
+
+.nav-contact::before {
+    content: "Contact"
 }
-.active{
+
+.active {
     background-color: rgb(83, 173, 83);
+}
+
+/*logo*/
+.logo {
+    position: relative;
+    height: 250px;
+    float: left;
+    bottom: 0px;
+    margin-top: 20px;
+}
+
+/*secction*/
+section {
+    position: relative;
+    margin-left: 100px;
+    text-align: left;
+    top: 50px;
+}
+
+article {
+    margin-left: 50px;
+    padding-bottom: 20px;
+    margin-top: 5px;
+}
+
+article>h3 {
+    font-size: 140%;
+    font-weight: bold;
+    margin-left: 10%;
+}
+
+article>p {
+    text-indent: 20px;
+    font-size: 130%;
+    margin-left: 12%;
+    margin-right: 10%;
+    text-align: justify;
+}
+
+.foto_hokey_tres {
+    display: none;
+}
+
+.foto_hokey_dos {
+    display: none;
 }
