@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Neue', cursive;
+}
+.container{
+    background: url(../img/design1_image2.jpg);
+    background-size: cover;
+    height: 500px;
+    margin-top: 90px;
+}
+.nom-equipo{
+    font-size: 500%;
+    font-weight: bold;
+    position: absolute;
+    top: 0px;
+}
+.bar h2{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 5px;
+    font-size: 2rem;
+    font-weight: bold;
+    border:2px solid rgb(0, 0, 0);
+   position: relative;   
+}
