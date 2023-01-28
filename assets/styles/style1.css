@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Comic Neue', cursive;
+    font-family: 'Comic Neue';
 }
 header{
     background: url(../img/design1_image1.jpg);
@@ -19,6 +19,7 @@ header{
     background-color: black;
     text-align: center;
     padding: 10px;
+    font-size: 150%;
 }
   
 .logo{
@@ -27,19 +28,50 @@ header{
     float: right;
     bottom: 100px;
 }
-nav .nav{
-    margin-top: 75px;
+nav{
+    width: 100px;
+    font-size: 110%;
+    margin-top: 10px;
+    margin-left: 20px;
     float: left;
+    position: absolute;
 }
 nav a{
     display: block;
-    margin: 50px;
+    margin-top: 50px;
 }   
 .active{
     text-decoration: none;
     color: #000;
 }
+.nav-contact{
+padding-bottom: 50px;
+margin-bottom: 50px;
+}
 section{
-    float: right;
     position: relative;
+    margin-left: 100px;
+    text-align: left;
+    top: 50px;
+}
+article{
+    margin-left: 50px;
+    padding-bottom: 20px;
+    margin-top: 5px;
+}
+h3{
+    font-size: 140%;
+    font-weight: bold;
+    margin-left: 10%;
+}
+article>p{
+    font-size: 130%;
+    margin-left: 12%;
+    text-align: justify;
+}
+.foto_hokey_tres{
+    display: none;
+}
+.foto_hokey_dos{
+    display: none;
 }
