@@ -48,6 +48,15 @@ nav a{
 padding-bottom: 50px;
 margin-bottom: 50px;
 }
+.nav-home::before{
+    content: "Home";
+}
+.nav-about::before{
+    content: "About MDHL";
+}
+.nav-contact::before{
+    content:"contact"
+}
 section{
     position: relative;
     margin-left: 100px;
