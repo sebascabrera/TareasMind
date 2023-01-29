@@ -80,19 +80,52 @@ nav a {
 /*Bar*/
 .bar {
 
-    font-size:xx-large ;
+    font-size: xx-large;
     text-align: center;
     background: url(../img/LogoMightyduck-01.ico);
     -webkit-text-fill-color: #fc0707;
     -webkit-text-stroke: 1px #000000;
     height: 50px;
     position: relative;
-    background-size:contain;
-    background-position:center;
+    background-size: contain;
+    background-position: center;
     display: block;
+
 }
 
-
-
 /*section*/
-section {}
+.foto_hokey_tres {
+    display: none;
+}
+
+.foto_hokey_dos {
+    left: 25%;
+    border: 3px solid #488740;
+    height: 300px;
+    border-radius: 4% 4% 50% 50%;
+    box-shadow: 10px 8px 8px #488740;
+    position: re;
+    position: relative;
+}
+
+section {
+    position: relative;
+    background: linear-gradient(#d2dda2, #76d676);
+}
+
+article {
+    display: inline;
+    position: relative;
+}
+
+article>h3 {
+    font-size: 180%;
+    margin: 5px;
+}
+
+article>p {
+    padding: 5px;
+    /* margin: 10px; */
+    text-indent: 20px;
+    font-size: 130%;
+}
