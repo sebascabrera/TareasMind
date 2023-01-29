@@ -25,6 +25,7 @@
     height: 500px;
     margin-top: 0px;
     position: relative;
+    border-bottom: 3px solid rgb(83, 158, 73);
 }
 
 .nom-equipo {
@@ -34,4 +35,37 @@
     position: absolute;
     bottom: 120px;
     left: 20%;
+}
+
+/* Barra de navegacion*/
+nav a {
+    position: relative;
+    display: inline;
+    padding: 5px 20px;
+    font-size: 120%;
+    margin-left: 20%;
+    border: 2px solid black;
+    bottom: 500px;
+    color: rgb(252, 252, 252);
+    background-color: rgb(83, 158, 73);
+    border-radius: 50px;
+    text-decoration: none;
+    
+}
+
+.active {
+    background-color: rgb(252, 7, 211);
+    
+}
+
+.nav-home::before {
+    content: "Home";
+}
+
+.nav-about::before {
+    content: "About";
+}
+
+.nav-contact::before {
+    content: "Contact"
 }
