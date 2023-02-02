@@ -56,7 +56,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 60%;
+    /* height: 60%; */
     width: 100%;
 }
 
@@ -164,7 +164,9 @@ article>p {
 .nav-contact::before {
     content: "Contact"
 }
-
+.nav-games::before{
+    content: "Schedule";
+}
 nav a {
     text-align: center;
     padding: 5px 5px;
@@ -226,4 +228,8 @@ nav a {
 .titles-sections{
     padding-bottom: 2%;
     font-size:xx-large;
+}
+.container-table{
+    /* display: flex;
+    flex-direction: row; */
 }
