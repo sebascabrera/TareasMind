@@ -110,6 +110,7 @@ h2 {
     flex-direction: row;
     justify-content: start;
     align-items: stretch;
+    flex-grow: 1;
 }
 
 .picture-hokey-2 {
@@ -138,12 +139,15 @@ article>p {
 }
 
 /*nav-bar*/
-.container-nav{
+.container-nav {
     display: flex;
-     flex-direction: column;
-    justify-content: space-around;
-   
+    flex-direction: column;
+    /* justify-content: space-around; */
+    padding-right: 3%;
+    margin-left: 1%;
+
 }
+
 .active {
     color: #ffffffa6;
     background-color: #d19f67;
@@ -161,7 +165,7 @@ article>p {
     content: "Contact"
 }
 
-nav a{
+nav a {
     text-align: center;
     padding: 5px 5px;
     font-size: 120%;
@@ -172,38 +176,54 @@ nav a{
     text-decoration: none;
     box-shadow: 5px 3px 3px #000000;
 }
+
 /* de html contact*/
-.div-contact{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-/* Imagen de la section del about*/
-.img-section-about{
-    display: flex;
-    align-items: center;
-}
-.div-section{
+.div-contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+/* Imagen de la section del about*/
+.img-section-about {
+    display: flex;
+    align-items: center;
+}
+
+.div-section {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
 /* Estilos propios de rules*/
-.h3-subtitle{
+.h3-subtitle {
     color: #364049;
     font-size: 250%;
     align-items: center;
     text-align: center;
 }
+
 /* boton de rules*/
 .nav-rules::before {
     content: "Rules"
 }
 
-.container-section-rules{
+.container-section-rules {
     display: flex;
     flex-direction: column;
     padding: 30px;
-   }
+}
 
+#section-rules {
+    border: 2px solid yellow;
+    width: 75%;
+    justify-content: end;
+    flex-grow: 2;
+    padding: 3%;
+}
+
+.titles-sections{
+    padding-bottom: 2%;
+    font-size:xx-large;
+}
