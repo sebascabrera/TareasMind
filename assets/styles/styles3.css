@@ -79,6 +79,7 @@
     background: #2a7d81;
     box-shadow: 10px 10px #02565a;
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     margin: 15px;
@@ -189,3 +190,20 @@ nav a{
 }
 
 /* Estilos propios de rules*/
+.h3-subtitle{
+    color: #364049;
+    font-size: 250%;
+    align-items: center;
+    text-align: center;
+}
+/* boton de rules*/
+.nav-rules::before {
+    content: "Rules"
+}
+
+.container-section-rules{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+   }
+
