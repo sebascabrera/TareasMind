@@ -13,48 +13,10 @@
 </head>
 
 <body class="container-body">
-    <!-- <header class="container-header">
-        <div>
-            <img src="./assets/img/hockey2.jpg" alt="imagen de header" class="img-header">
-        </div>
-        <div>
-            <h1 class="nom-equipo">Mighty Ducks Hockey League</h1>
-        </div>
-    </header>
-    <main class="container-main">
-        <div class="bar">
-            <div class="h2-title">
-                <h2>RULES OF PLAY & POLICIES</h2>
-                <h3 class="h3-subtitle">IHF rules shall govern MDHL play except as modified herein.</h3>
-            </div>
-            <div>
-                <img class="log-bar" src="./assets/img/LogoMightyduck-01.png" alt="logo de equipo">
-            </div>
-            <div>
-                <img class="log-bar" src="./assets/img/LogoMightyduck-01.png" alt="logo de equipo">
-            </div>
-            <div>
-                <img class="log-bar" src="./assets/img/LogoMightyduck-01.png" alt="logo de equipo">
-            </div>
-            <div>
-                <img class="log-bar" src="./assets/img/LogoMightyduck-01.png" alt="logo de equipo">
-            </div>
-        </div>
-    </main>
-    <div class="container-section">
-        <nav class="container-nav">
-            <a class="nav-home" href="./index.html"></a>
-            <a class="nav-about" href="./about.html"></a>
-            <a class="nav-contact" href="./contact.html"></a>
-            <a class="nav-rules active" href="#" ></a>
-            <a class="nav-games" href="./game-information.html"></a>
-        </nav>
-        <div class="div-section" id="section-rules">
-        </div> -->
     <main class="main-registration">
         <div class="img-registration">
         </div>
-        <section class="form">
+        <section class="section-form">
             <h1>Registration Form</h1>
             <form action="./show_data.html" method="get">
                 <fieldset>
@@ -111,82 +73,95 @@
                     </label>
                 </fieldset>
                 <h3>Which elementary school do you live near?</h3>
-                <fieldset>
+                <fieldset class="schools">
                     <legend>Closed School</legend>
-                    <label for="AJ-Katzenmaier">
-                        <input type="radio" name="School" id="AJ-Katzenmaier" value="AJ-Katzenmaier">
-                        AJ Katzenmaier
-                    </label>
-                    <label for="Greenbay">
-                        <input type="radio" name="School" id="Greenbay" value="Greenbay">
-                        Greenbay
-                    </label>
-                    <label for="Howard-A-Yeguer">
-                        <input type="radio" name="School" id="Howard-A-Yeguer" value="Howard-A-Yeguer">
-                        Howard A Yeguer
-                    </label>
-                    <label for="Marjorie-P-Hart">
-                        <input type="radio" name="School" id="Marjorie-P-Hart" value="Marjorie-P-Hart">
-                        Marjorie P Hart
-                    </label>
-                    <label for="North-Elementary">
-                        <input type="radio" name="School" id="North-Elementary" value="North-Elementary">
-                        North Elementary
-                    </label>
-                    <label for="South-Elementary">
-                        <input type="radio" name="School" id="South-Elementary" value="South-Elementary">
-                        South Elementary
-                    </label>
+                    <div>
+                        <label for="AJ-Katzenmaier">
+                            <input type="radio" name="School" id="AJ-Katzenmaier" value="AJ-Katzenmaier">
+                            AJ Katzenmaier
+                        </label><br>
+                        <label for="Greenbay">
+                            <input type="radio" name="School" id="Greenbay" value="Greenbay">
+                            Greenbay
+                        </label><br>
+                        <label for="Howard-A-Yeguer">
+                            <input type="radio" name="School" id="Howard-A-Yeguer" value="Howard-A-Yeguer">
+                            Howard A Yeguer
+                        </label><br>
+                    </div>
+                    <div>
+                        <label for="Marjorie-P-Hart">
+                            <input type="radio" name="School" id="Marjorie-P-Hart" value="Marjorie-P-Hart">
+                            Marjorie P Hart
+                        </label><br>
+                        <label for="North-Elementary">
+                            <input type="radio" name="School" id="North-Elementary" value="North-Elementary">
+                            North Elementary
+                        </label><br>
+                        <label for="South-Elementary">
+                            <input type="radio" name="School" id="South-Elementary" value="South-Elementary">
+                            South Elementary
+                        </label><br>
+                    </div>
                 </fieldset>
                 <h3>Whath position(s) do you normally play? (check all that apply)</h3>
-                <fieldset>
-                    <label for="foward">
-                        <input type="checkbox" name="position" id="foward" value="Foward">
-                        Foward
-                    </label>
-                    <label for="defense">
-                        <input type="checkbox" name="position" id="" value="defense">
-                        Defense
-                    </label>
-                    <label for="mildfield">
-                        <input type="checkbox" name="position" id="mildfield" value="Mildfield">
-                        Mildfield
-                    </label>
-                    <label for="goalkeeper">
-                        <input type="checkbox" name="position" id="goalkeeper" value="Goalkeeper">
-                        Goalkeeper
-                    </label>
+                <fieldset class="players-position">
+                    <div>
+                        <label for="foward">
+                            <input type="checkbox" name="position" id="foward" value="Foward">
+                            Foward
+                        </label><br>
+                        <label for="defense">
+                            <input type="checkbox" name="position" id="" value="defense">
+                            Defense
+                        </label>
+                    </div>
+                    <div>
+                        <label for="mildfield">
+                            <input type="checkbox" name="position" id="mildfield" value="Mildfield">
+                            Mildfield
+                        </label><br>
+                        <label for="goalkeeper">
+                            <input type="checkbox" name="position" id="goalkeeper" value="Goalkeeper">
+                            Goalkeeper
+                        </label><br>
+                    </div>
                 </fieldset>
                 <h3>Uniform Size</h3>
-                <fieldset>
-                    <label for="Youth-Small">
-                        <input type="radio" name="size" id="Youth-Small" value="Youth Small">
-                        Youth Small
-                    </label>
-                    <label for="Youth-Medium">
-                        <input type="radio" name="size" id="Youth-Medium" value="Youth Medium">
-                        Youth Medium
-                    </label>
-                    <label for="Youth-Large">
-                        <input type="radio" name="size" id="Youth-Large" value="Youth Large">
-                        Youth Large
-                    </label>
-                    <label for="Small">
-                        <input type="radio" name="size" id="Small" value="Small">
-                        Small
-                    </label>
-                    <label for="Medium">
-                        <input type="radio" name="size" id="Medium" value="Medium">
-                        Medium
-                    </label>
-                    <label for="Large">
-                        <input type="radio" name="size" id="Large" value="Large">
-                        Large
-                    </label>
-                    <label for="Extra-Large">
-                        <input type="radio" name="size" id="Extra-Large" value="Extra-Large">
-                        Extra-Large
-                    </label>
+                <fieldset class="uniform">
+                    <div>
+                        <label for="Youth-Small">
+                            <input type="radio" name="size" id="Youth-Small" value="Youth Small">
+                            Youth Small
+                        </label><br>
+                        <label for="Youth-Medium">
+                            <input type="radio" name="size" id="Youth-Medium" value="Youth Medium">
+                            Youth Medium
+                        </label><br>
+                        <label for="Youth-Large">
+                            <input type="radio" name="size" id="Youth-Large" value="Youth Large">
+                            Youth Large
+                        </label><br>
+                        <label for="Small">
+                            <input type="radio" name="size" id="Small" value="Small">
+                            Small
+                        </label><br>
+                    </div>
+                    <div>
+                        </label>
+                        <label for="Medium">
+                            <input type="radio" name="size" id="Medium" value="Medium">
+                            Medium
+                        </label><br>
+                        <label for="Large">
+                            <input type="radio" name="size" id="Large" value="Large">
+                            Large
+                        </label><br>
+                        <label for="Extra-Large">
+                            <input type="radio" name="size" id="Extra-Large" value="Extra-Large">
+                            Extra-Large
+                        </label><br>
+                    </div>
                 </fieldset>
                 <article>
                     <h3>Permission to Play</h3>

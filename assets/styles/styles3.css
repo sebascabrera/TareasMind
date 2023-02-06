@@ -340,8 +340,7 @@ footer {
 
 .main-registration{
     display: flex;
-    height: 100vh;
-
+    
 }
 .img-registration{
     background: url(../img/design.jpg);
@@ -349,10 +348,39 @@ footer {
     background-size: cover;
     height: 100%;
     width: 50%;
+    
 }
-.form{
+.section-form{
+
+    height: 100%;
     width: 50%;
-    justify-content: center;
     padding: 0px 3%;
-    gap: 200px;
+   
+}
+h1{
+    font-size: 200%;
+    text-align: center;
+    padding: 5% 0%;
+}
+
+legend{
+    font-size: 150%;
+    padding: 2% 50px;
+}
+
+.uniform{
+    display: flex;
+    justify-content: space-around;
+}
+.players-position{
+    display: flex;
+    justify-content: space-around;
+}
+.schools{
+    display: flex;
+    justify-content: space-around;
+}
+label{
+    padding: 5px;
+    margin: 50px;
 }
