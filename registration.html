@@ -13,7 +13,7 @@
 </head>
 
 <body class="container-body">
-    <header class="container-header">
+    <!-- <header class="container-header">
         <div>
             <img src="./assets/img/hockey2.jpg" alt="imagen de header" class="img-header">
         </div>
@@ -50,4 +50,164 @@
             <a class="nav-games" href="./game-information.html"></a>
         </nav>
         <div class="div-section" id="section-rules">
+        </div> -->
+    <main class="main-registration">
+        <div class="img-registration">
         </div>
+        <section class="form">
+            <h1>Registration Form</h1>
+            <form action="./show_data.html" method="get">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="fst-name">Player's First Name:</label>
+                    <input type="text" name="First Name" id="fst-name" placeholder="Robert" required>
+
+                    <label for="lst-name">Player's Last Name:</label>
+                    <input type="text" name="Last Name" id="lst-name" placeholder="De Niro" required>
+
+                    <label for="address">Street address:</label>
+                    <input type="text" name="Address" id="address" placeholder="Los Hamptons y Gardiner">
+
+                    <label for="city">City:</label>
+                    <input type="text" name="City" id="city" placeholder="Nueva York">
+
+                    <label for="zip-code">Zip Code:</label>
+                    <input type="number" name="Zip Code" id="zip-code" placeholder="11937">
+
+                    <label for="birth-date">Birth-date:</label>
+                    <input type="date" name="Birth-date" id="birth-date">
+
+                    <label for="female">Gender: Female</label>
+                    <input type="checkbox" name="Female" id="female">
+                    <label for="male">Male</label>
+                    <input type="checkbox" name="Male" id="male">
+
+                </fieldset>
+                <fieldset>
+                    <legend>Education Label</legend>
+                    <label for="grade">
+                        <input type="radio" name="Grade" id="grade" value="Pre-School">
+                        Pre-School
+                    </label>
+                    <label for="1st">
+                        <input type="radio" name="Grade" id="1st" value="1st">
+                        1st
+                    </label>
+                    <label for="2nd">
+                        <input type="radio" name="Grade" id="2nd" value="2nd">
+                        2nd
+                    </label>
+                    <label for="3rd">
+                        <input type="radio" name="Grade" id="3rd" value="3rd">
+                        3rd
+                    </label>
+                    <label for="4th">
+                        <input type="radio" name="Grade" id="4th" value="4th">
+                        4th
+                    </label>
+                    <label for="5th">
+                        <input type="radio" name="Grade" id="5th" value="5th">
+                        5th
+                    </label>
+                </fieldset>
+                <h3>Which elementary school do you live near?</h3>
+                <fieldset>
+                    <legend>Closed School</legend>
+                    <label for="AJ-Katzenmaier">
+                        <input type="radio" name="School" id="AJ-Katzenmaier" value="AJ-Katzenmaier">
+                        AJ Katzenmaier
+                    </label>
+                    <label for="Greenbay">
+                        <input type="radio" name="School" id="Greenbay" value="Greenbay">
+                        Greenbay
+                    </label>
+                    <label for="Howard-A-Yeguer">
+                        <input type="radio" name="School" id="Howard-A-Yeguer" value="Howard-A-Yeguer">
+                        Howard A Yeguer
+                    </label>
+                    <label for="Marjorie-P-Hart">
+                        <input type="radio" name="School" id="Marjorie-P-Hart" value="Marjorie-P-Hart">
+                        Marjorie P Hart
+                    </label>
+                    <label for="North-Elementary">
+                        <input type="radio" name="School" id="North-Elementary" value="North-Elementary">
+                        North Elementary
+                    </label>
+                    <label for="South-Elementary">
+                        <input type="radio" name="School" id="South-Elementary" value="South-Elementary">
+                        South Elementary
+                    </label>
+                </fieldset>
+                <h3>Whath position(s) do you normally play? (check all that apply)</h3>
+                <fieldset>
+                    <label for="foward">
+                        <input type="checkbox" name="position" id="foward" value="Foward">
+                        Foward
+                    </label>
+                    <label for="defense">
+                        <input type="checkbox" name="position" id="" value="defense">
+                        Defense
+                    </label>
+                    <label for="mildfield">
+                        <input type="checkbox" name="position" id="mildfield" value="Mildfield">
+                        Mildfield
+                    </label>
+                    <label for="goalkeeper">
+                        <input type="checkbox" name="position" id="goalkeeper" value="Goalkeeper">
+                        Goalkeeper
+                    </label>
+                </fieldset>
+                <h3>Uniform Size</h3>
+                <fieldset>
+                    <label for="Youth-Small">
+                        <input type="radio" name="size" id="Youth-Small" value="Youth Small">
+                        Youth Small
+                    </label>
+                    <label for="Youth-Medium">
+                        <input type="radio" name="size" id="Youth-Medium" value="Youth Medium">
+                        Youth Medium
+                    </label>
+                    <label for="Youth-Large">
+                        <input type="radio" name="size" id="Youth-Large" value="Youth Large">
+                        Youth Large
+                    </label>
+                    <label for="Small">
+                        <input type="radio" name="size" id="Small" value="Small">
+                        Small
+                    </label>
+                    <label for="Medium">
+                        <input type="radio" name="size" id="Medium" value="Medium">
+                        Medium
+                    </label>
+                    <label for="Large">
+                        <input type="radio" name="size" id="Large" value="Large">
+                        Large
+                    </label>
+                    <label for="Extra-Large">
+                        <input type="radio" name="size" id="Extra-Large" value="Extra-Large">
+                        Extra-Large
+                    </label>
+                </fieldset>
+                <article>
+                    <h3>Permission to Play</h3>
+                    <p>
+                        I, the parent or guardian of the miror registrant, agree thar the registrant and I will abide by
+                        all the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of
+                        physical injury associated whith hockey and in consideration fo "League" accepting the
+                        registrant for its hockey programs and associated personnel and volunteers, including the
+                        facilities used for practices and games, against any claim by or on behalf of thr registrant as
+                        a result of the registrant's participation in the programand/orbeing transported to or from MDHL
+                        sponsored activities, which transportation
+                    </p>
+                    <p>By signing below, I herebyagree andauthorizethe above. In addition, by signing below, I also
+                        acknowledge that I have read the cancellation policy and agree to its terms</p>
+                </article>
+                <label for="submite-date">Date:</label>
+                <input type="date" name="Submite-date" id="submite-date" required>
+                <input type="submit" value="submit">
+
+            </form>
+        </section>
+    </main>
+
+</body>
