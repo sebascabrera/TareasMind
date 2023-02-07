@@ -13,39 +13,82 @@
 </head>
 
 <body class="container-body">
-    <main class="main-registration">
+
+    <header class="container-header">
+        <div>
+            <img src="./assets/img/hockey2.jpg" alt="imagen de header" class="img-header">
+        </div>
+        <div>
+            <h1 class="nom-equipo">Mighty Ducks Hockey League</h1>
+        </div>
+    </header>
+    <main class="container-main">
+        <div class="bar">
+            <div class="h2-title">
+                <h2>Upcoming Events</h2>
+            </div>
+            <div>
+                <img class="log-bar" src="./assets/img/LogoMightyduck-01.png" alt="logo de equipo">
+            </div>
+            <div>
+                <img class="log-bar" src="./assets/img/LogoMightyduck-01.png" alt="logo de equipo">
+            </div>
+            <div>
+                <img class="log-bar" src="./assets/img/LogoMightyduck-01.png" alt="logo de equipo">
+            </div>
+            <div>
+                <img class="log-bar" src="./assets/img/LogoMightyduck-01.png" alt="logo de equipo">
+            </div>
+        </div>
+    </main>
+
+    <div class="general-registration">
+        <section class="container-section sec-nav-registration">
+            <nav class="container-nav">
+                <a class="nav-home" href="./index.html">-</a>
+                <a class="nav-about" href="./about.html">-</a>
+                <a class="nav-contact" href="./contact.html">-</a>
+                <a href="./rules.html" class="nav-rules">-</a>
+                <a class="nav-games" href="./game-information.html">-</a>
+                <a class="nav-registration active" href="active">-</a>
+            </nav>
+        </section>
+        <!--banner-->
         <div class="img-registration">
         </div>
         <section class="section-form">
-            <h1>Registration Form</h1>
+            <h1 class="h1-form">Registration Form</h1>
             <form action="./show_data.html" method="get">
                 <fieldset>
                     <legend>Personal Information</legend>
-                    <label for="fst-name">Player's First Name:</label>
-                    <input type="text" name="First Name" id="fst-name" placeholder="Robert" required>
+                    <div>
+                        <label for="fst-name">Player's First Name:</label>
+                        <input type="text" name="First Name" id="fst-name" placeholder="Robert" required>
 
-                    <label for="lst-name">Player's Last Name:</label>
-                    <input type="text" name="Last Name" id="lst-name" placeholder="De Niro" required>
+                        <label for="lst-name">Player's Last Name:</label>
+                        <input type="text" name="Last Name" id="lst-name" placeholder="De Niro" required>
+                    </div><br>
 
                     <label for="address">Street address:</label>
-                    <input type="text" name="Address" id="address" placeholder="Los Hamptons y Gardiner">
+                    <input type="text" name="Address" id="address" placeholder="Los Hamptons y Gardiner" required>
+                    <div><br>
+                        <label for="city">City:</label>
+                        <input type="text" name="City" id="city" placeholder="Nueva York" required>
 
-                    <label for="city">City:</label>
-                    <input type="text" name="City" id="city" placeholder="Nueva York">
+                        <label for="zip-code">Zip Code:</label>
+                        <input type="number" name="Zip Code" id="zip-code" placeholder="11937">
+                    </div><br>
+                    <div>
+                        <label for="birth-date">Birth-date:</label>
+                        <input type="date" name="Birth-date" id="birth-date" required>
 
-                    <label for="zip-code">Zip Code:</label>
-                    <input type="number" name="Zip Code" id="zip-code" placeholder="11937">
-
-                    <label for="birth-date">Birth-date:</label>
-                    <input type="date" name="Birth-date" id="birth-date">
-
-                    <label for="female">Gender: Female</label>
-                    <input type="checkbox" name="Female" id="female">
-                    <label for="male">Male</label>
-                    <input type="checkbox" name="Male" id="male">
-
+                        <label for="female">Gender: Female</label>
+                        <input type="checkbox" name="Female" id="female">
+                        <label for="male">Male</label>
+                        <input type="checkbox" name="Male" id="male">
+                    </div>
                 </fieldset>
-                <fieldset>
+                <fieldset class="education-label">
                     <legend>Education Label</legend>
                     <label for="grade">
                         <input type="radio" name="Grade" id="grade" value="Pre-School">
@@ -55,8 +98,8 @@
                         <input type="radio" name="Grade" id="1st" value="1st">
                         1st
                     </label>
-                    <label for="2nd">
-                        <input type="radio" name="Grade" id="2nd" value="2nd">
+                    <label for="second">
+                        <input type="radio" name="Grade" id="second" value="2nd">
                         2nd
                     </label>
                     <label for="3rd">
@@ -75,44 +118,27 @@
                 <h3>Which elementary school do you live near?</h3>
                 <fieldset class="schools">
                     <legend>Closed School</legend>
-                    <div>
-                        <label for="AJ-Katzenmaier">
-                            <input type="radio" name="School" id="AJ-Katzenmaier" value="AJ-Katzenmaier">
-                            AJ Katzenmaier
-                        </label><br>
-                        <label for="Greenbay">
-                            <input type="radio" name="School" id="Greenbay" value="Greenbay">
-                            Greenbay
-                        </label><br>
-                        <label for="Howard-A-Yeguer">
-                            <input type="radio" name="School" id="Howard-A-Yeguer" value="Howard-A-Yeguer">
-                            Howard A Yeguer
-                        </label><br>
-                    </div>
-                    <div>
-                        <label for="Marjorie-P-Hart">
-                            <input type="radio" name="School" id="Marjorie-P-Hart" value="Marjorie-P-Hart">
-                            Marjorie P Hart
-                        </label><br>
-                        <label for="North-Elementary">
-                            <input type="radio" name="School" id="North-Elementary" value="North-Elementary">
-                            North Elementary
-                        </label><br>
-                        <label for="South-Elementary">
-                            <input type="radio" name="School" id="South-Elementary" value="South-Elementary">
-                            South Elementary
-                        </label><br>
-                    </div>
+                    <label for="schools">Your options
+                        <select name="schools" id="schools">
+                            <option value="empty" selected>Choose your option</option>
+                            <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+                            <option value="Greenbay">Greenbay</option>
+                            <option value=" Howard A Yeguer"> Howard A Yeguer</option>
+                            <option value="Marjorie P Hart">Marjorie P Hart</option>
+                            <option value=" North Elementary"> North Elementary</option>
+                            <option value="South Elementary">South Elementary</option>
+                        </select>
+                    </label>
                 </fieldset>
-                <h3>Whath position(s) do you normally play? (check all that apply)</h3>
                 <fieldset class="players-position">
+                    <legend>Whath position(s) do you normally play? (check all that apply)</legend>
                     <div>
                         <label for="foward">
                             <input type="checkbox" name="position" id="foward" value="Foward">
                             Foward
                         </label><br>
                         <label for="defense">
-                            <input type="checkbox" name="position" id="" value="defense">
+                            <input type="checkbox" name="position" id="defense" value="defense">
                             Defense
                         </label>
                     </div>
@@ -127,8 +153,8 @@
                         </label><br>
                     </div>
                 </fieldset>
-                <h3>Uniform Size</h3>
                 <fieldset class="uniform">
+                    <legend>Uniform Size</legend>
                     <div>
                         <label for="Youth-Small">
                             <input type="radio" name="size" id="Youth-Small" value="Youth Small">
@@ -148,7 +174,6 @@
                         </label><br>
                     </div>
                     <div>
-                        </label>
                         <label for="Medium">
                             <input type="radio" name="size" id="Medium" value="Medium">
                             Medium
@@ -166,23 +191,28 @@
                 <article>
                     <h3>Permission to Play</h3>
                     <p>
-                        I, the parent or guardian of the miror registrant, agree thar the registrant and I will abide by
+                        I, the parent or guardian of the miror registrant, agree thar the registrant and I will
+                        abide by
                         all the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of
                         physical injury associated whith hockey and in consideration fo "League" accepting the
                         registrant for its hockey programs and associated personnel and volunteers, including the
-                        facilities used for practices and games, against any claim by or on behalf of thr registrant as
-                        a result of the registrant's participation in the programand/orbeing transported to or from MDHL
+                        facilities used for practices and games, against any claim by or on behalf of thr registrant
+                        as
+                        a result of the registrant's participation in the programand/orbeing transported to or from
+                        MDHL
                         sponsored activities, which transportation
                     </p>
                     <p>By signing below, I herebyagree andauthorizethe above. In addition, by signing below, I also
                         acknowledge that I have read the cancellation policy and agree to its terms</p>
                 </article>
-                <label for="submite-date">Date:</label>
+                <label for="submite-date">Registration date:</label>
                 <input type="date" name="Submite-date" id="submite-date" required>
+                <label for="parents-name">Enter your full name:</label>
+                <input type="text" name="parents-name" id="parents-name" required>
                 <input type="submit" value="submit">
 
             </form>
         </section>
-    </main>
+    </div>
 
 </body>

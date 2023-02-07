@@ -145,9 +145,8 @@ article>p {
 .container-nav {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-around; */
     padding-right: 3%;
-    margin-left: 1%;
+    margin: 3% 1%;
 
 }
 
@@ -165,11 +164,18 @@ article>p {
 }
 
 .nav-contact::before {
-    content: "Contact"
+    content: "Contact";
 }
 
 .nav-games::before {
     content: "Schedule";
+}
+/* boton de rules*/
+.nav-rules::before {
+    content: "Rules";
+}
+.nav-registration::before {
+    content: "Registration";
 }
 
 nav a {
@@ -178,7 +184,7 @@ nav a {
     font-size: 120%;
     border: 2px solid #000000;
     color: #e78d8da4;
-    background-color: #B7680C;
+    background-color: #96550b;
     border-radius: 50px;
     text-decoration: none;
     box-shadow: 5px 3px 3px #000000;
@@ -213,10 +219,7 @@ nav a {
     text-align: center;
 }
 
-/* boton de rules*/
-.nav-rules::before {
-    content: "Rules"
-}
+
 
 .container-section-rules {
     color: #ffffffb6;
@@ -336,51 +339,64 @@ footer {
 #mail::before {
     content: "michael.randall@chihockey.org";
 }
-               /* Registration */
 
-.main-registration{
+/* Registration */
+
+.general-registration {
     display: flex;
-    
 }
-.img-registration{
+.sec-nav-registration{
+    padding: 2em;
+}
+
+.img-registration {
     background: url(../img/design.jpg);
     background-position: right;
     background-size: cover;
     height: 100%;
     width: 50%;
-    
+
 }
-.section-form{
+/* formulario*/
+.section-form {
 
     height: 100%;
     width: 50%;
     padding: 0px 3%;
-   
+
 }
-h1{
+
+.h1-form {
     font-size: 200%;
     text-align: center;
     padding: 5% 0%;
 }
 
-legend{
+legend {
     font-size: 150%;
-    padding: 2% 50px;
+    padding: 2% 20px;
 }
 
-.uniform{
+.uniform {
     display: flex;
     justify-content: space-around;
 }
-.players-position{
+
+.players-position {
     display: flex;
     justify-content: space-around;
 }
-.schools{
+
+.schools {
     display: flex;
     justify-content: space-around;
 }
-label{
-    padding: 5px;
-    margin: 50px;
+
+.education-label {
+    display: flex;
+    padding: 0px opx;
+}
+
+form .indice {
+    padding-bottom: 20px ;
 }
