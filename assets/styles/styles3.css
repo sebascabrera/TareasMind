@@ -308,6 +308,7 @@ td {
     padding: 2rem;
 
 }
+
 .after-table {
     margin-left: 10%;
     display: flex;
@@ -425,7 +426,7 @@ td {
 
 input[type="submit"] {
     color: #b9b9b9;
-    font-size:x-large;
+    font-size: x-large;
 }
 
 .form input[type="submit"]:hover {
@@ -460,4 +461,40 @@ legend {
 
 form .indice {
     padding-bottom: 20px;
+}
+
+.footer-maps {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+}
+
+.footer-maps .maps {
+    width: 400px;
+    height: 300px;
+}
+
+.material-symbols-outlined {
+    padding-left: 3em;
+    color: #96550b;
+}
+
+.btn-back {
+    font-size: large;
+    color: #313f4b;
+    background-color: #2a7d81;
+    cursor: pointer;
+    padding: 3px 50px;
+    align-items: center;
+    margin-bottom: 3rem;
+    border: 1px solid #000000;
+    border-radius: 10%;
+}
+
+.btn-footer {
+    display: flex;
+    justify-content: center;
+
 }
