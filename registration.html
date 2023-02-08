@@ -43,7 +43,7 @@
     </main>
 
     <div class="general-registration">
-        <section class="container-section sec-nav-registration">
+        <div class="container-section sec-nav-registration">
             <nav class="container-nav">
                 <a class="nav-home" href="./index.html">-</a>
                 <a class="nav-about" href="./about.html">-</a>
@@ -52,21 +52,22 @@
                 <a class="nav-games" href="./game-information.html">-</a>
                 <a class="nav-registration active" href="active">-</a>
             </nav>
-        </section>
+        </div>
         <!--banner-->
         <div class="img-registration">
         </div>
         <section class="section-form">
-            <h1 class="h1-form">Registration Form</h1>
-            <form action="./show_data.html" method="get">
-                <fieldset>
+            <h2 class="h1-form">Registration Form</h2>
+            <form action="./show_data.html" method="get" class="form">
+                <fieldset class="pers-inform-field fieldsets">
                     <legend>Personal Information</legend>
                     <div>
                         <label for="fst-name">Player's First Name:</label>
                         <input type="text" name="First Name" id="fst-name" placeholder="Robert" required>
-
-                        <label for="lst-name">Player's Last Name:</label>
-                        <input type="text" name="Last Name" id="lst-name" placeholder="De Niro" required>
+                        <div class="lst-name">
+                            <label for="lst-name">Player's Last Name:</label>
+                            <input type="text" name="Last Name" id="lst-name" placeholder="De Niro" required>
+                        </div>
                     </div><br>
 
                     <label for="address">Street address:</label>
@@ -78,7 +79,7 @@
                         <label for="zip-code">Zip Code:</label>
                         <input type="number" name="Zip Code" id="zip-code" placeholder="11937">
                     </div><br>
-                    <div>
+                    <div class="birth-date">
                         <label for="birth-date">Birth-date:</label>
                         <input type="date" name="Birth-date" id="birth-date" required>
 
@@ -88,7 +89,7 @@
                         <input type="checkbox" name="Male" id="male">
                     </div>
                 </fieldset>
-                <fieldset class="education-label">
+                <fieldset class="education-label fieldsets">
                     <legend>Education Label</legend>
                     <label for="grade">
                         <input type="radio" name="Grade" id="grade" value="Pre-School">
@@ -116,7 +117,7 @@
                     </label>
                 </fieldset>
                 <h3>Which elementary school do you live near?</h3>
-                <fieldset class="schools">
+                <fieldset class="schools fieldsets">
                     <legend>Closed School</legend>
                     <label for="schools">Your options
                         <select name="schools" id="schools">
@@ -130,7 +131,7 @@
                         </select>
                     </label>
                 </fieldset>
-                <fieldset class="players-position">
+                <fieldset class="players-position fieldsets">
                     <legend>Whath position(s) do you normally play? (check all that apply)</legend>
                     <div>
                         <label for="foward">
@@ -153,7 +154,7 @@
                         </label><br>
                     </div>
                 </fieldset>
-                <fieldset class="uniform">
+                <fieldset class="uniform fieldsets">
                     <legend>Uniform Size</legend>
                     <div>
                         <label for="Youth-Small">
@@ -205,12 +206,17 @@
                     <p>By signing below, I herebyagree andauthorizethe above. In addition, by signing below, I also
                         acknowledge that I have read the cancellation policy and agree to its terms</p>
                 </article>
-                <label for="submite-date">Registration date:</label>
-                <input type="date" name="Submite-date" id="submite-date" required>
-                <label for="parents-name">Enter your full name:</label>
-                <input type="text" name="parents-name" id="parents-name" required>
-                <input type="submit" value="submit">
-
+                <div class="submite-date">
+                    <label for="submite-date">Registration date:</label>
+                    <input type="date" name="Submite-date" id="submite-date" required>
+                </div>
+                <div>
+                    <label for="parents-name">Enter parent or guardian full name:</label>
+                    <input type="text" name="parents-name" id="parents-name" placeholder="Alfredo James Pacino"  required>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="submit">
+                </div>
             </form>
         </section>
     </div>

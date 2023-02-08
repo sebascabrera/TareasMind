@@ -105,7 +105,7 @@ h2 {
 
 }
 
-/*section*/
+/*--------------------------------section*/
 
 .container-section {
     background: #852D1F;
@@ -141,7 +141,7 @@ article>p {
     font-size: 130%;
 }
 
-/*nav-bar*/
+/*-----------------------------------nav-bar*/
 .container-nav {
     display: flex;
     flex-direction: column;
@@ -170,10 +170,12 @@ article>p {
 .nav-games::before {
     content: "Schedule";
 }
-/* boton de rules*/
+
+/*--------------------------------- boton de rules*/
 .nav-rules::before {
     content: "Rules";
 }
+
 .nav-registration::before {
     content: "Registration";
 }
@@ -190,14 +192,14 @@ nav a {
     box-shadow: 5px 3px 3px #000000;
 }
 
-/* de html contact*/
+/* ----------------------------de html contact*/
 .div-contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-/* Imagen de la section del about*/
+/* -----------------------------Imagen de la section del about*/
 .img-section-about {
     display: flex;
     align-items: center;
@@ -209,7 +211,7 @@ nav a {
     /* justify-content: center; */
 }
 
-/* Estilos propios de rules*/
+/*----------------------------- Estilos propios de rules*/
 
 
 .h3-subtitle {
@@ -265,7 +267,7 @@ li {
     padding-bottom: 2%;
 }
 
-/* elementos de game-information*/
+/* ------------------------elementos de game-information*/
 
 .container-section-game {
 
@@ -306,8 +308,7 @@ td {
     padding: 2rem;
 
 }
-
-footer {
+.after-table {
     margin-left: 10%;
     display: flex;
     flex-direction: column;
@@ -340,30 +341,103 @@ footer {
     content: "michael.randall@chihockey.org";
 }
 
-/* Registration */
+/* ---------------------------------Registration */
 
 .general-registration {
     display: flex;
+    padding: 15px;
 }
-.sec-nav-registration{
+
+.sec-nav-registration {
     padding: 2em;
 }
 
 .img-registration {
     background: url(../img/design.jpg);
-    background-position: right;
+    background-position: bottom;
     background-size: cover;
-    height: 100%;
     width: 50%;
 
 }
-/* formulario*/
+
+/* ---------------------------formulario*/
 .section-form {
 
     height: 100%;
     width: 50%;
     padding: 0px 3%;
 
+
+}
+
+.h1-form {
+    color: #313f4b;
+    text-shadow: 0px 2px 2px #B7680C;
+    font-size: 250%;
+    align-items: center;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    color: #b9b9b9;
+
+}
+
+.form input {
+    background: none;
+    border-radius: 20%;
+    text-align: center;
+}
+
+.form label {
+    padding: 5px;
+    text-align: center;
+
+}
+
+.lst-name {
+    padding-top: 15px;
+}
+
+.fieldsets {
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pers-inform-field {
+    flex-direction: column;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+}
+
+.form input[type="submit"] {
+    margin: 10px;
+    padding: .5rem 12rem;
+    background-color: #364049;
+
+}
+
+input[type="submit"] {
+    color: #b9b9b9;
+    font-size:x-large;
+}
+
+.form input[type="submit"]:hover {
+    color: #313f4b;
+    background-color: #2a7d81;
+    cursor: pointer;
+}
+
+
+
+.submite-date {
+    padding: 10px;
 }
 
 .h1-form {
@@ -377,26 +451,13 @@ legend {
     padding: 2% 20px;
 }
 
-.uniform {
-    display: flex;
-    justify-content: space-around;
-}
 
-.players-position {
-    display: flex;
-    justify-content: space-around;
-}
-
-.schools {
-    display: flex;
-    justify-content: space-around;
-}
 
 .education-label {
     display: flex;
-    padding: 0px opx;
+    padding: 0px;
 }
 
 form .indice {
-    padding-bottom: 20px ;
+    padding-bottom: 20px;
 }
